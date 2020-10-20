@@ -42,7 +42,7 @@ for($search=1; $search<=10;$search = $search +1){
 <br><br>
     <figure>
           
-        <a href="distribution.php"><img src="./Img/back.png" style="width:100; height:110px" title="back" alt="back"></a><br>
+        <a href="distribution.php"><img src="./Img/back.webp" style="width:100; height:110px" title="back" alt="back"></a><br>
        
         <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             

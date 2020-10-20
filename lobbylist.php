@@ -43,7 +43,7 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
         
             <figure>
           
-                <a href="countplayers.php"><img src="./Img/play.png" style="width:110; height:110px" title="start" alt="start"></a><br>
+                <a href="countplayers.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a><br>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
@@ -55,7 +55,7 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
             
             <figure>
             
-            <a href="distribution.php"><img src="./Img/play.png" style="width:110; height:110px" title="start" alt="start"></a><br>
+            <a href="distribution.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a><br>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
