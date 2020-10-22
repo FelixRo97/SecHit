@@ -8,6 +8,17 @@ body{
     background-size: cover;
 }
 
+right{
+    float: right;
+   
+}
+
+left{
+    float: left;
+    
+    
+}
+
 test{
     color: white;
 	text-align: left;

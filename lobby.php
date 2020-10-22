@@ -47,17 +47,7 @@ if(isset($_SESSION['username'])){
     }
     ?> 
     
-    <figure>
-          
-        <a href="logout.php"><img src="./Img/exit.webp" style="width:110; height:110px" title="logout" alt="lo"></a><br>
-       
-        <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
-            
-        </object></a> -->
-        
-    </figure>
-
-
+    
         <button id="demo" onclick="myFunction()">Want to see your IP?</button>
     
         <script>

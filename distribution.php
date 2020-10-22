@@ -99,7 +99,7 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
 
 
     <div class="Role-pic">
-          <img src="Img/Lib.jpg" alt="..." > 
+          <img src="Img/Lib.webp" alt="..." > 
     </div>   
     
 </h1>        

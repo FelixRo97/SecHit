@@ -20,48 +20,49 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
 
 
     
-<div id="player1"><?php echo" $player1 <br>"?>
-<!--
-<svg><img src="./Img/stickman.svg" alt="Stickman"> </svg> </div>-->
-
-<div id="player2"><?php echo" $player2 <br>"?> </div>
-<div id="player3"><?php echo" $player3 <br>"?> </div>
-<div id="player4"><?php echo" $player4 <br>"?> </div>
-<div id="player5"><?php echo" $player5 <br>"?> </div>
-<div id="player6"><?php echo" $player6 <br>"?> </div>
-<div id="player7"><?php echo" $player7 <br>"?> </div>
-<div id="player8"><?php echo" $player8 <br>"?> </div>
-<div id="player9"><?php echo" $player9 <br>"?> </div>
-<div id="player10"><?php echo" $player10 <br>"?> </div>
+<?php echo" $player1 <br>"?>
+<?php echo" $player2 <br>"?>
+<?php echo" $player3 <br>"?> 
+<?php echo" $player4 <br>"?>
+<?php echo" $player5 <br>"?> 
+<?php echo" $player6 <br>"?>
+<?php echo" $player7 <br>"?> 
+<?php echo" $player8 <br>"?>
+<?php echo" $player9 <br>"?> 
+<?php echo" $player10 <br>"?> 
 <br>
 
-
+ <div id=menu>
     <?php if(!($name==="")): ?>
 
     
         <?php if(isset($_SESSION['position']) AND $_SESSION['position']==1):?>
-        
+           
+            <right>
             <figure>
           
-                <a href="countplayers.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a><br>
+                <a href="countplayers.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
                 </object></a> -->
         
             </figure>
+            </right>
             
             <?php elseif ((file_get_contents("amount.txt", true)>4) AND (file_get_contents("amount.txt", true)<11)):?>
             
+            <right>
             <figure>
             
-            <a href="distribution.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a><br>
+            <a href="distribution.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
                 </object></a> -->
         
             </figure>
+            </right>
     
              <?php else:?>
         
@@ -69,3 +70,18 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
     
          <?php endif; ?>   
     <?php endif; ?>
+    
+    
+    <left>
+    <figure>
+          
+        <a href="logout.php"><img src="./Img/exit.webp" style="width:110; height:110px" title="logout" alt="lo"></a><br>
+       
+        <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
+            
+        </object></a> -->
+        
+    </figure>
+    </left>
+    
+    </div>
