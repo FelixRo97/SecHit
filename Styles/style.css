@@ -3,6 +3,22 @@ body {
  
 }
 
+#figure {
+    /*text-align: center;*/
+    background-color: white;
+ 	width: 120px;
+	height: 120px;
+	background-position: center;
+	border: 2px dotted black;
+	border-radius: .5em;
+	
+}
+
+#pos{
+   
+    transform: translate(4%, 5%);
+    
+}
 
 
 
@@ -10,29 +26,30 @@ body {
 
 
 h1 {
-    text-align: center;
+    
 	margin: 0em;
 	padding: 0em;
-	position: relative;
-	top: 0;
-	font-size: 4em; 
+	text-align: center;
+	font-size: 6em; 
 	font-family: verdana;
     width: auto;
+    transform: translate(0%, 300%);
     /*text-transform: uppercase;
 	letter-spacing: 0.1em;
 	text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;*/
 }
 
 .feld{
-    width:330px;
-    height:55px;
+    width:450px;
+    font-size: 0.75em; 
+    height:80px;
     border: 2px solid black;
     
 }
 
 .STD{ 
 	
-	margin: 0em auto; 
+	transform: translate(0%, 75%);
 	position: relative;
 	left: 0;
 	
@@ -64,6 +81,7 @@ footer{
 .feld{
     width:310px;
     height:45px;
+    font-size: 0.5em;
     border: 2px solid black;
     
 }

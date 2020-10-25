@@ -40,15 +40,17 @@ for($search=1; $search<=10;$search = $search +1){
 ?>
 
 <br><br>
-    <figure>
+    <div id="figure">
+        <div id="pos">
           
         <a href="distribution.php"><img src="./Img/back.webp" style="width:100; height:110px" title="back" alt="back"></a><br>
        
         <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
         </object></a> -->
+        </div>
         
-    </figure>
+    </div>
 
 </h2>
         

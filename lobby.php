@@ -12,7 +12,10 @@ if(isset($_SESSION['username'])){
         
         <link rel="stylesheet" href="Styles/style2.css">    
         
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        
+    </head>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
           $("#refresh").load("lobbylist.php");
@@ -20,8 +23,7 @@ if(isset($_SESSION['username'])){
          $("#refresh").load('lobbylist.php?' + 1*new Date());
              }, 1500);
         });
-        </script>
-    </head>
+    </script>
     
     <body>
     <div class="center-frame">
@@ -29,24 +31,20 @@ if(isset($_SESSION['username'])){
     </div>
     
     <h1>Lobby<h1>
-    <h2> <?php echo"Dein Name : $name <br><br>"?> 
+    <h2> <?php echo"Dein Name : $name <br><br>";
     
-    
+        if(isset($_SESSION['position']) AND $_SESSION['position']==0){
+        echo"Reset erfolgreich <br><br>";
+        }
+        ?> 
+    </h2> 
+
 
     
     <test>
      <div id="refresh" style="text-align:center;"></div>
     </test>
-    
- <?php
- 
- 
- 
-    if(isset($_SESSION['position']) AND $_SESSION['position']==0){
-        echo"Reset erfolgreich <br><br>";
-    }
-    ?> 
-    
+       
     
         <button id="demo" onclick="myFunction()">Want to see your IP?</button>
     
@@ -58,7 +56,7 @@ if(isset($_SESSION['username'])){
 
 
         </script> 
-    </h2>
+    
 </body>
 </html>
 

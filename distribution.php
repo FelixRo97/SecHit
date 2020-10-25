@@ -1,7 +1,27 @@
 <?php
 //header("refresh:6;url=distribution.php");
-session_start(); 
+session_start(); ?>
 
+ <html>
+    <head>
+        <title>Verteilung</title>
+        <link rel="stylesheet" href="Styles/style2.css">
+
+     </head>
+    
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+          $("#refresh").load("dlist.php");
+             var refreshId = setInterval(function() {
+         $("#refresh").load('dlist.php?' + 1*new Date());
+             }, 1500);
+        });
+        </script>
+     
+     <h1>
+
+<?php
 $name="";
 
 //In $name den Wert der Session speichern
@@ -51,24 +71,7 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
     echo"Wrong amount of players <br>";
 } ?>
  
- <html>
-    <head>
-        <title>Verteilung</title>
-        <link rel="stylesheet" href="Styles/style2.css">
-
  
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-          $("#refresh").load("dlist.php");
-             var refreshId = setInterval(function() {
-         $("#refresh").load('dlist.php?' + 1*new Date());
-             }, 1500);
-        });
-        </script>
-     </head>
-     <h1>
-
     <body>
     
         <test>
@@ -104,6 +107,8 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
     
 </h1>        
 <h2>
+
+ <?php if ($playercount < 11 AND $playercount> 4): ?>
 
 <form action="luschern.php" method="post"><br>
 <label for="target">Wähle einen Spieler, dessen Partei du sehen möchtest:</label><br>
@@ -234,18 +239,22 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
 
 <input type="Submit" value= "Submit" /><br><br>
 
+<?php endif; ?>
+
+
 </form>
     </sript>
 
-    <figure>
+    <div id="figure">
+        <div id="pos">
           
         <a href="logout.php"><img src="./Img/exit.webp" style="width:110; height:110px" title="logout" alt="lo"></a>
        
         <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
         </object></a> -->
-        
-    </figure>
+        </div>
+    </div>
     </h2>
     </body>
 </html>

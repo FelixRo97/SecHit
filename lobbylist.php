@@ -19,7 +19,7 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
 
 
 
-    
+ <h2> 
 <?php echo" $player1 <br>"?>
 <?php echo" $player2 <br>"?>
 <?php echo" $player3 <br>"?> 
@@ -29,8 +29,9 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
 <?php echo" $player7 <br>"?> 
 <?php echo" $player8 <br>"?>
 <?php echo" $player9 <br>"?> 
-<?php echo" $player10 <br>"?> 
-<br>
+<?php echo" $player10 "?> 
+<br></h2>
+
 
  <div id=menu>
     <?php if(!($name==="")): ?>
@@ -39,49 +40,50 @@ $player10 = "Player 10 ".' : '. file_get_contents("./Session/Player 10.txt", tru
         <?php if(isset($_SESSION['position']) AND $_SESSION['position']==1):?>
            
             <right>
-            <figure>
+            <div id="figure">
+                <div id="pos">
           
-                <a href="countplayers.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a>
+                <a href="countplayers.php"><img src="./Img/play.webp" style="width:130; height:130px" title="start" alt="start"></a>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
                 </object></a> -->
-        
-            </figure>
+                </div>
+            </div>
             </right>
             
             <?php elseif ((file_get_contents("amount.txt", true)>4) AND (file_get_contents("amount.txt", true)<11)):?>
             
             <right>
-            <figure>
+            <div id="figure">
+                <div id="pos">
             
-            <a href="distribution.php"><img src="./Img/play.webp" style="width:110; height:110px" title="start" alt="start"></a>
+            <a href="distribution.php"><img src="./Img/play.webp" style="width:130px; height:130px" title="start" alt="start"></a>
        
                     <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             
                 </object></a> -->
-        
-            </figure>
+                </div>
+            </div>
             </right>
     
              <?php else:?>
-        
-            <?php echo"Waiting for host to start game <br><br>";?>
-    
+            <h2>
+            <?php echo"Waiting for host to start game <br>";?>
+            </h2>
+            
          <?php endif; ?>   
     <?php endif; ?>
     
     
     <left>
-    <figure>
-          
-        <a href="logout.php"><img src="./Img/exit.webp" style="width:110; height:110px" title="logout" alt="lo"></a><br>
+    <div id="figure">
+         <div id="pos">
+        <a href="logout.php"><img src="./Img/exit.webp" style="width:130; height:130px" title="logout" alt="lo"></a><br>
        
-        <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
-            
-        </object></a> -->
+        </div>
         
-    </figure>
+    </div>
     </left>
     
     </div>

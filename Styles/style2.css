@@ -33,25 +33,6 @@ svg{
     
 }
 
-figure {
-    background-color: white;
- 	width: 130px;
-	height: 115px;
-	background-attachment:fixed;
-	background-position: center;
-	border: 2px dotted black;
-	border-radius: .5em;
-}
-
-figure2 {
-    background-color: white;
- 	width: 130px;
-	height: 115px;
-	background-attachment:fixed;
-	background-position: center;
-	border: 2px dotted black;
-	border-radius: .5em;
-}
 
 
 
@@ -62,7 +43,7 @@ h1{
     
 	color: white;
 	text-align: center;
-	font-size: 3em; 
+	font-size: 4em; 
 	font-family: verdana;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -75,7 +56,7 @@ h2{
     
 	color: white;
 	text-align: center;
-	font-size: 3em; 
+	font-size: 4em; 
 	font-family: verdana;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -95,6 +76,30 @@ h3{
     
 }
 
+#figure {
+    background-color: white;
+ 	width: 150px;
+	height: 140px;
+	background-attachment:fixed;
+	background-position: center;
+	border: 2px dotted black;
+	border-radius: .5em;
+}
+
+figure2 {
+    background-color: white;
+ 	width: 130px;
+	height: 115px;
+	background-attachment:fixed;
+	background-position: center;
+	border: 2px dotted black;
+	border-radius: .5em;
+}
+
+#pos{
+   
+    transform: translate(0%, 4%);
+}
 
 }
 
@@ -136,6 +141,33 @@ h3{
     height: 420px;
     
 }
+
+#figure {
+    background-color: white;
+ 	width: 150px;
+	height: 140px;
+	background-attachment:fixed;
+	background-position: center;
+	border: 2px dotted black;
+	border-radius: .5em;
+}
+
+figure2 {
+    background-color: white;
+ 	width: 130px;
+	height: 115px;
+	background-attachment:fixed;
+	background-position: center;
+	border: 2px dotted black;
+	border-radius: .5em;
+}
+
+#pos{
+   
+    transform: translate(0%, 4%);
+}
+
+
 }
 
 
