@@ -6,14 +6,14 @@ session_start();?>
         <link rel="stylesheet" href="Styles/style2.css">
     </head>   
 <h2>
-
+<br>
 <?php
 $target = $_POST['target'];
 $playercount = file_get_contents("amount.txt", true);
 $targetrole = "";
 
 if($playercount>4 AND $playercount < 11){
-for($search=1; $search<=10;$search = $search +1){
+for($search=1; $search<=$playercount;$search = $search +1){
   if(file_get_contents("./Setting/$playercount Players/Player $search/Name.txt", true)=== $target){
       $targetrole = file_get_contents("./Setting/$playercount Players/Player $search/Role.txt", true);
       $search = 10;
@@ -40,8 +40,8 @@ for($search=1; $search<=10;$search = $search +1){
 ?>
 
 <br><br>
-    <div id="figure">
-        <div id="pos">
+    <div id="figure2">
+        <div id="pos2">
           
         <a href="distribution.php"><img src="./Img/back.webp" style="width:100; height:110px" title="back" alt="back"></a><br>
        

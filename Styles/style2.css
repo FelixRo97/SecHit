@@ -19,22 +19,30 @@ left{
     
 }
 
-test{
-    color: white;
-	text-align: left;
-	font-size: 1em; 
-	font-family: verdana;
+btn{
+    position: fixed;
+    bottom: 0;
 }
-
-
-svg{
-    width: 10px;
-	height: 10px;
     
+
+select {
+    width: 250px;
+    height: 65px;
+    border-width: 3px;
+    border-color: rgba(50, 50, 50, 0.14);
+    font-size: 50px;
+    background-color: white;
 }
 
-
-
+input[type=Submit] {
+    width: 260px;
+    height: 65px;
+    text-indent: 10px;
+    border-width: 3px;
+    border-color: rgba(50, 50, 50, 0.14);
+    font-size: 50px;
+    background-color: white;
+}
 
 
 @media (max-width: 1500px) {
@@ -86,10 +94,11 @@ h3{
 	border-radius: .5em;
 }
 
-figure2 {
+#figure2 {
+    transform: translate(350%, 10%);
     background-color: white;
- 	width: 130px;
-	height: 115px;
+ 	width: 115px;
+	height: 140px;
 	background-attachment:fixed;
 	background-position: center;
 	border: 2px dotted black;
@@ -99,6 +108,11 @@ figure2 {
 #pos{
    
     transform: translate(0%, 4%);
+}
+
+#pos2{
+   
+    transform: translate(-4%, 13%);
 }
 
 }
@@ -152,10 +166,11 @@ figure2 {
 	border-radius: .5em;
 }
 
-figure2 {
+#figure2 {
+    transform: translate(750%, 10%);
     background-color: white;
- 	width: 130px;
-	height: 115px;
+ 	width: 115px;
+	height: 140px;
 	background-attachment:fixed;
 	background-position: center;
 	border: 2px dotted black;
@@ -165,6 +180,11 @@ figure2 {
 #pos{
    
     transform: translate(0%, 4%);
+}
+
+#pos2{
+   
+    transform: translate(-4%, 12%);
 }
 
 

@@ -110,9 +110,11 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
 
  <?php if ($playercount < 11 AND $playercount> 4): ?>
 
+
 <form action="luschern.php" method="post"><br>
 <label for="target">Wähle einen Spieler, dessen Partei du sehen möchtest:</label><br>
-<select name="target">
+
+<select name="target" >
     
     <?php if (file_get_contents("amount.txt", true) == 5): ?>
 
@@ -236,8 +238,9 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
 
 </select>
 
+<choice>
+<input type="Submit" value= "Ermitteln" /></choice> <br>
 
-<input type="Submit" value= "Submit" /><br><br>
 
 <?php endif; ?>
 
@@ -248,7 +251,7 @@ if($playercount>4 AND $playercount<11 AND !isset($_SESSION['role']) AND !($name=
     <div id="figure">
         <div id="pos">
           
-        <a href="logout.php"><img src="./Img/exit.webp" style="width:110; height:110px" title="logout" alt="lo"></a>
+        <a href="logout.php"><img src="./Img/exit.webp" style="width:130; height:130px" title="logout" alt="lo"></a>
        
         <!-- <a href="logout.php"><object data="./Img/power.svg"  type="image/svg+xml" width="600" height="193">
             

@@ -40,12 +40,10 @@ if(isset($_SESSION['username'])){
     </h2> 
 
 
-    
-    <test>
      <div id="refresh" style="text-align:center;"></div>
-    </test>
-       
     
+       
+        <btn>
         <button id="demo" onclick="myFunction()">Want to see your IP?</button>
     
         <script>
@@ -56,6 +54,7 @@ if(isset($_SESSION['username'])){
 
 
         </script> 
+        </btn>
     
 </body>
 </html>
