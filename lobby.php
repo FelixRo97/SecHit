@@ -31,13 +31,17 @@ if(isset($_SESSION['username'])){
     </div>
     
     <h1>Lobby<h1>
-    <h2> <?php echo"Dein Name : $name <br><br>";
+    <h2> <?php
+        if(!($name ==="")){
+        echo"Dein Name : $name ";
+        }
     
         if(isset($_SESSION['position']) AND $_SESSION['position']==0){
-        echo"Reset erfolgreich <br><br>";
+        echo"Reset erfolgreich";
         }
         ?> 
     </h2> 
+    <br><br>
 
 
      <div id="refresh" style="text-align:center;"></div>
