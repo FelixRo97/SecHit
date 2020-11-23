@@ -30,8 +30,12 @@ if(isset($_SESSION['username'])){
         
         $newJsonString = json_encode($lobbyinfo);
         file_put_contents("DB/checklobby.json", $newJsonString);
-                    
-                    
+        
+        
+        unset($_SESSION['position']);
+        unset($_SESSION['']);
+        
+
 }
 session_destroy();
 

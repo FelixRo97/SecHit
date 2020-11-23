@@ -25,17 +25,29 @@ $targetrole = "";
         // Convert to array 
         $playerlist = json_decode($strJson, true); 
         
-
+$search = 1;      
+$test = 0;
 if($playercount>4 and $playercount < 11){
-for($search=1; $search<=$playercount;$search = $search +1){
-  if($playerlist[$search-1]["Player_$search"] === $target){
-      $targetrole = $playerlist[$search-1]["Role"];
-      $search = 10;
-  } 
-}
+   
+    for($search=1; $search<=$playercount;$search = $search +1){
+        
+        
+      if($playerlist[$search-1]["Player_$search"] === $target){
+         
+          
+          $test = $search;
+          
+          break;
+      } 
+    }
+    
+   
+    $targetrole = $playerlist[$search-1]["Role"];
+    
+    
  if( (strpos($targetrole,'Antidemokrat') !== false) OR (strpos($targetrole,'Leader')!== false)){
      
-     echo"$target ist Antidemokrat";
+     echo"$target ist Antidemokrat"; 
    
                 $lobbyinfo[2]["isobserved"] = $target; 
                 $newJsonString = json_encode($lobbyinfo);

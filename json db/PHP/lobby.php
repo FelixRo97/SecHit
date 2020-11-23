@@ -35,6 +35,7 @@ if(isset($_SESSION['username'])){
          $("#refresh").load('lobbylist.php?' + 1*new Date());
              }, 1500);
         });
+        
     </script>
     
     <body>

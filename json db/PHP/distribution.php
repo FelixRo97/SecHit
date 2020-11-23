@@ -156,7 +156,7 @@ if($playercount>4 and $playercount<11 and !isset($_SESSION['role']) and !($name=
     
     <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
     
-    <option value=<?php echo $playernum["Player_2"]?>><?php echo $playernum["Player_2"]; ?></option>
+    <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
     <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
@@ -169,104 +169,105 @@ if($playercount>4 and $playercount<11 and !isset($_SESSION['role']) and !($name=
 <?php elseif ($playercount == 6): ?>
 
 
-    <option value=<?php echo $playerlist[0]["Player_1"]; ?>><?php echo $playerlist[0]["Player_1"]; ?></option>
+    <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
     
-    <option value=<?php echo $playerlist[1]["Player_2"]?>><?php echo $playerlist[1]["Player_2"]; ?></option>
+    <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
-    <option value=<?php echo $playerlist[2]["Player_3"]; ?>><?php echo $playerlist[2]["Player_3"]; ?></option>
+    <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
-    <option value=<?php echo $playerlist[3]["Player_4"]; ?>><?php echo $playerlist[3]["Player_4"]; ?></option>
+    <option value=<?php echo $playernum["Player_4"]; ?>><?php echo $playernum["Player_4"]; ?></option>
     
-    <option value=<?php echo $playerlist[4]["Player_5"]; ?>><?php echo $playerlist[4]["Player_5"]; ?></option>
+    <option value=<?php echo $playernum["Player_5"]; ?>><?php echo $playernum["Player_5"]; ?></option>
     
-    <option value=<?php echo $playerlist[5]["Player_6"]; ?>><?php echo $playerlist[5]["Player_6"]; ?></option>
+    <option value=<?php echo $playernum["Player_6"]; ?>><?php echo $playernum["Player_6"]; ?></option>
     
     
  
  <?php elseif ($playercount == 7): ?>
 
 
-    <option value=<?php echo $playerlist[0]["Player_1"]; ?>><?php echo $playerlist[0]["Player_1"]; ?></option>
+    <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
     
-    <option value=<?php echo $playerlist[1]["Player_2"]?>><?php echo $playerlist[1]["Player_2"]; ?></option>
+    <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
-    <option value=<?php echo $playerlist[2]["Player_3"]; ?>><?php echo $playerlist[2]["Player_3"]; ?></option>
+    <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
-    <option value=<?php echo $playerlist[3]["Player_4"]; ?>><?php echo $playerlist[3]["Player_4"]; ?></option>
+    <option value=<?php echo $playernum["Player_4"]; ?>><?php echo $playernum["Player_4"]; ?></option>
     
-    <option value=<?php echo $playerlist[4]["Player_5"]; ?>><?php echo $playerlist[4]["Player_5"]; ?></option>
+    <option value=<?php echo $playernum["Player_5"]; ?>><?php echo $playernum["Player_5"]; ?></option>
     
-    <option value=<?php echo $playerlist[5]["Player_6"]; ?>><?php echo $playerlist[5]["Player_6"]; ?></option>
+    <option value=<?php echo $playernum["Player_6"]; ?>><?php echo $playernum["Player_6"]; ?></option>
     
-     <option value=<?php echo $playerlist[6]["Player_7"]; ?>><?php echo $playerlist[6]["Player_7"]; ?></option>
+    <option value=<?php echo $playernum["Player_7"]; ?>><?php echo $playernum["Player_7"]; ?></option>
     
     
 <?php elseif ($playercount == 8): ?>
 
 
-     <option value=<?php echo $playerlist[0]["Player_1"]; ?>><?php echo $playerlist[0]["Player_1"]; ?></option>
+    <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
+        
+    <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
-    <option value=<?php echo $playerlist[1]["Player_2"]?>><?php echo $playerlist[1]["Player_2"]; ?></option>
+    <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
-    <option value=<?php echo $playerlist[2]["Player_3"]; ?>><?php echo $playerlist[2]["Player_3"]; ?></option>
+    <option value=<?php echo $playernum["Player_4"]; ?>><?php echo $playernum["Player_4"]; ?></option>
     
-    <option value=<?php echo $playerlist[3]["Player_4"]; ?>><?php echo $playerlist[3]["Player_4"]; ?></option>
+    <option value=<?php echo $playernum["Player_5"]; ?>><?php echo $playernum["Player_5"]; ?></option>
     
-    <option value=<?php echo $playerlist[4]["Player_5"]; ?>><?php echo $playerlist[4]["Player_5"]; ?></option>
+    <option value=<?php echo $playernum["Player_6"]; ?>><?php echo $playernum["Player_6"]; ?></option>
     
-    <option value=<?php echo $playerlist[5]["Player_6"]; ?>><?php echo $playerlist[5]["Player_6"]; ?></option>
+    <option value=<?php echo $playernum["Player_7"]; ?>><?php echo $playernum["Player_7"]; ?></option>
     
-     <option value=<?php echo $playerlist[6]["Player_7"]; ?>><?php echo $playerlist[6]["Player_7"]; ?></option>
-    
-   <option value=<?php echo $playerlist[7]["Player_8"]; ?>><?php echo $playerlist[7]["Player_8"]; ?></option>
+    <option value=<?php echo $playernum["Player_8"]; ?>><?php echo $playernum["Player_8"]; ?></option>
     
    
 
 <?php elseif ($playercount == 9): ?>
 
 
-    <option value=<?php echo $playerlist[0]["Player_1"]; ?>><?php echo $playerlist[0]["Player_1"]; ?></option>
+     <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
     
-    <option value=<?php echo $playerlist[1]["Player_2"]?>><?php echo $playerlist[1]["Player_2"]; ?></option>
+     <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
-    <option value=<?php echo $playerlist[2]["Player_3"]; ?>><?php echo $playerlist[2]["Player_3"]; ?></option>
+     <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
-    <option value=<?php echo $playerlist[3]["Player_4"]; ?>><?php echo $playerlist[3]["Player_4"]; ?></option>
+     <option value=<?php echo $playernum["Player_4"]; ?>><?php echo $playernum["Player_4"]; ?></option>
     
-    <option value=<?php echo $playerlist[4]["Player_5"]; ?>><?php echo $playerlist[4]["Player_5"]; ?></option>
+     <option value=<?php echo $playernum["Player_5"]; ?>><?php echo $playernum["Player_5"]; ?></option>
     
-    <option value=<?php echo $playerlist[5]["Player_6"]; ?>><?php echo $playerlist[5]["Player_6"]; ?></option>
+     <option value=<?php echo $playernum["Player_6"]; ?>><?php echo $playernum["Player_6"]; ?></option>
     
-     <option value=<?php echo $playerlist[6]["Player_7"]; ?>><?php echo $playerlist[6]["Player_7"]; ?></option>
+     <option value=<?php echo $playernum["Player_7"]; ?>><?php echo $playernum["Player_7"]; ?></option>
     
-   <option value=<?php echo $playerlist[7]["Player_8"]; ?>><?php echo $playerlist[7]["Player_8"]; ?></option>
+     <option value=<?php echo $playernum["Player_8"]; ?>><?php echo $playernum["Player_8"]; ?></option>
     
-   <option value=<?php echo $playerlist[8]["Player_9"]; ?>><?php echo $playerlist[8]["Player_9"]; ?></option>
+     <option value=<?php echo $playernum["Player_9"]; ?>><?php echo $playernum["Player_9"]; ?></option>
     
   
     
     <?php elseif ($playercount == 10): ?>
 
 
-     <option value=<?php echo $playerlist[0]["Player_1"]; ?>><?php echo $playerlist[0]["Player_1"]; ?></option>
+    <option value=<?php echo $playernum["Player_1"]; ?>><?php echo $playernum["Player_1"]; ?></option>
     
-    <option value=<?php echo $playerlist[1]["Player_2"]?>><?php echo $playerlist[1]["Player_2"]; ?></option>
+    <option value=<?php echo $playernum["Player_2"]; ?>><?php echo $playernum["Player_2"]; ?></option>
     
-    <option value=<?php echo $playerlist[2]["Player_3"]; ?>><?php echo $playerlist[2]["Player_3"]; ?></option>
+    <option value=<?php echo $playernum["Player_3"]; ?>><?php echo $playernum["Player_3"]; ?></option>
     
-    <option value=<?php echo $playerlist[3]["Player_4"]; ?>><?php echo $playerlist[3]["Player_4"]; ?></option>
+    <option value=<?php echo $playernum["Player_4"]; ?>><?php echo $playernum["Player_4"]; ?></option>
     
-    <option value=<?php echo $playerlist[4]["Player_5"]; ?>><?php echo $playerlist[4]["Player_5"]; ?></option>
+    <option value=<?php echo $playernum["Player_5"]; ?>><?php echo $playernum["Player_5"]; ?></option>
     
-    <option value=<?php echo $playerlist[5]["Player_6"]; ?>><?php echo $playerlist[5]["Player_6"]; ?></option>
+    <option value=<?php echo $playernum["Player_6"]; ?>><?php echo $playernum["Player_6"]; ?></option>
     
-     <option value=<?php echo $playerlist[6]["Player_7"]; ?>><?php echo $playerlist[6]["Player_7"]; ?></option>
+    <option value=<?php echo $playernum["Player_7"]; ?>><?php echo $playernum["Player_7"]; ?></option>
     
-   <option value=<?php echo $playerlist[7]["Player_8"]; ?>><?php echo $playerlist[7]["Player_8"]; ?></option>
+    <option value=<?php echo $playernum["Player_8"]; ?>><?php echo $playernum["Player_8"]; ?></option>
     
-   <option value=<?php echo $playerlist[8]["Player_9"]; ?>><?php echo $playerlist[8]["Player_9"]; ?></option>
-    
-    <option value=<?php echo $playerlist[9]["Player_10"]; ?>><?php echo $playerlist[9]["Player_10"]; ?></option>
+    <option value=<?php echo $playernum["Player_9"]; ?>><?php echo $playernum["Player_9"]; ?></option>
+
+    <option value=<?php echo $playernum["Player_10"]; ?>><?php echo $playernum["Player_10"]; ?></option>
+
 
 <?php endif; ?>
 

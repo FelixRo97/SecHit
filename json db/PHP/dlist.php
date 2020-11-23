@@ -45,55 +45,62 @@ if($playercount>4 and $playercount<11 and isset($_SESSION['role'])){
     //Rolle ausgeben
     
     if(strpos($role,'Antidemokrat') !== false){
-    echo "$name deine Rolle ist: Antidemokrat <br><br>";
-        }else{
-    echo "$name deine Rolle ist: $role <br><br>";
+        echo "$name deine Rolle ist: Antidemokrat <br><br>";
+            }else{
+        echo "$name deine Rolle ist: $role <br><br>";
     }
+    
     
     
     if($playercount==5 OR $playercount==6){
     
-    if($role === "Leader"){
-    echo "Dein 31er Kollege ist: $fascho1 <br>";
+        if($role === "Leader"){
+        echo "Dein 31er Kollege ist: $fascho1 <br>";
+        }
+        
+        if($role === "Antidemokrat_1"){
+        echo "Dein 31er Kollege ist: $hit <br>";
+        }
     }
     
-    if($role === "Antidemokrat_1"){
-    echo "Dein 31er Kollege ist: $hit <br>";
-    }
-    }
+    
+    
     if($playercount==7 OR $playercount==8){
     
-    if($role === "Antidemokrat_1"){
-    echo "Dein 31er Kollege ist: $fascho2  <br>
-    Leader ist : $hit <br>";
-    }
-    
-    if($role === "Antidemokrat_2"){
-    echo "Dein 31er Kollege ist: $fascho1 <br> 
-    Leader ist : $hit <br>";
-    }
+        if($role === "Antidemokrat_1"){
+        echo "Dein 31er Kollege ist: $fascho2  <br><br>
+        Leader ist : $hit <br>";
+        }
+        
+        if($role === "Antidemokrat_2"){
+        echo "Dein 31er Kollege ist: $fascho1 <br><br> 
+        Leader ist : $hit <br>";
+        }
     }    
+    
+    
 
     if($playercount==9 OR $playercount==10){
     
-    if($role === "Antidemokrat_1"){
-    echo "Deine 31er Kollegen sind: $fascho2 und $fascho3  <br>
-    Leader ist : $hit <br>";
-    }
+        if($role === "Antidemokrat_1"){
+        echo "Deine 31er Kollegen sind: $fascho2 und $fascho3  <br><br>
+        Leader ist : $hit <br>";
+        }
+        
+        if($role === "Antidemokrat_2"){
+        echo "Deine 31er Kollegen sind: $fascho1 und $fascho3  <br><br>
+        Leader ist : $hit <br>";
+        }
+        
+        if($role === "Antidemokrat_3"){
+        echo "Deine 31er Kollegen sind: $fascho1 und $fascho2  <br><br>
+        Leader ist : $hit <br>";
+        }
     
-    if($role === "Antidemokrat_2"){
-    echo "Deine 31er Kollegen sind: $fascho1 und $fascho3  <br>
-    Leader ist : $hit <br>";
-    }
-    
-    if($role === "Antidemokrat_3"){
-    echo "Deine 31er Kollegen sind: $fascho1 und $fascho2  <br>
-    Leader ist : $hit <br>";
-    }
-    
     
     }
-    }
+}
+
 
 if(isset($_SESSION['observing']) and $_SESSION['observing'] !==false){
 
