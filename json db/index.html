@@ -1,0 +1,67 @@
+
+<html lang="de">
+   
+    <head>
+         <meta charset ="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="PHP/Styles/style.css">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    </head>
+    <body>
+        
+    
+    <script type="text/javascript">
+    
+        //cookie functions
+        
+            function setCookie(cname, cvalue, exdays) {
+                 var d = new Date();
+                 d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                 var expires = "expires="+d.toUTCString();
+                 document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+        function sichern () {
+        	 setCookie("pname", document.setName.name.value, "2");
+        	 
+        }
+    </script>
+      
+ <main>   
+ <h1> 
+ <div>     
+ <form name="setName" action="PHP/login.php" onsubmit="sichern(); return true;" method="POST">
+     
+<label for="name">Dein Name:</label><br>
+<feld><input type="Text" class="feld" name="name" /></feld> <br>
+</form>
+
+</div>
+</h1>
+
+    <div class="STD">
+          <img src="PHP/Img/Start STD.webp" width="1280" height="720" alt="..." > 
+    </div>     
+         
+</main>
+
+
+<footer>
+    <br>
+    <a href="http://www.onlinewebfonts.com">Font By Online Web Fonts (Alisa Nowak) / </a>
+    Image by <a href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2463236">FelixMittermeier</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2463236">Pixabay</a>
+</footer>
+
+
+
+</body>
+
+    
+
+</html>
+
