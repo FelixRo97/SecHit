@@ -45,6 +45,7 @@ if($playercount>4 and $playercount < 11){
     $targetrole = $playerlist[$search-1]["Role"];
     
     
+    
  if( (strpos($targetrole,'Antidemokrat') !== false) OR (strpos($targetrole,'Leader')!== false)){
      
      echo"$target ist Antidemokrat"; 

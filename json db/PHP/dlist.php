@@ -17,13 +17,7 @@ $lobbyinfo = json_decode($strJson2, true);
 //Spieleranzahl
 $playercount = $lobbyinfo[1]["amount"];
 
-        
- // read json file
-$strJsonFileContents = file_get_contents("DB/".$playercount."_Players.json");
-// Convert to array 
-$playerlist = json_decode($strJsonFileContents, true);  
-
-
+  
 //In $name den Wert der Session speichern
 if(isset($_SESSION['username'])){
 $name = $_SESSION['username'];
@@ -32,6 +26,14 @@ $name = $_SESSION['username'];
 
 
 if($playercount>4 and $playercount<11 and isset($_SESSION['role'])){
+    
+    
+    // read json file
+    $strJsonFileContents = file_get_contents("DB/".$playercount."_Players.json");
+    // Convert to array 
+    $playerlist = json_decode($strJsonFileContents, true);  
+        
+    
 
     $role = $_SESSION['role'];
     $player = $_SESSION['player'];  

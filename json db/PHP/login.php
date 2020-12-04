@@ -82,6 +82,7 @@ $name = $_POST['name'];
         for($pos=1;$pos<= 10;$pos= $pos + 1){
             
             // if position is empty
+            // additional ture value for bug fixing but didn't work...
             if( $playerlist["Player_$pos"] === "" and ( $lobbyinfo[0]["Player_$pos"] !== false)){
                     
                     // change value of player
