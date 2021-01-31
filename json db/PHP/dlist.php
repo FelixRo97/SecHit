@@ -113,7 +113,16 @@ if(isset($_SESSION['observing']) and $_SESSION['observing'] !==false){
                 $_SESSION['observing']=false;
 }
 
-echo"<br>";?>
+echo"<br>";
+
+    //search for possible spaces in playername (error avoidence)
+for ($i=0; $i<$playercount;$i++){
+$j=($i+1);
+$playerlist[$i]["Player_$j"] = trim($playerlist[$i]["Player_$j"]);
+    }
+$newJsonString = json_encode($playerlist);
+file_put_contents("DB/".$playercount."_Players.json", $newJsonString);    
+?>
 
 <script>
 

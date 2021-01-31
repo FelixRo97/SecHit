@@ -12,9 +12,7 @@ echo '<font color="white">';
 
 //Spielername
 $name = "";
-$name = $_POST['name'];
-
-
+$name = trim($_POST['name']);
 
 
  if ($name === "reset"){
@@ -24,7 +22,11 @@ $name = $_POST['name'];
             for($runset=5;$runset<=10;$runset = $runset +1){
                 
                   
-                // read json file
+                $newJsonString = file_get_contents("DB/backUp$runset.json");
+                file_put_contents("DB/".$runset."_Players.json", $newJsonString);
+                  
+                  
+                /* read json file
                 $strJsonFileContents = file_get_contents("DB/".$runset."_Players.json");
                 // Convert to array 
                 $playerlist = json_decode($strJsonFileContents, true);  
@@ -36,7 +38,7 @@ $name = $_POST['name'];
                 }
                 
                 $newJsonString = json_encode($playerlist);
-                file_put_contents("DB/".$runset."_Players.json", $newJsonString);
+                file_put_contents("DB/".$runset."_Players.json", $newJsonString);*/
             }
             
             //clear Lobby

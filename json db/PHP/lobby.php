@@ -14,6 +14,7 @@ session_start();
 
 $name = "";
 if(isset($_SESSION['username'])){
+    //remove spaces in playername to avoid errors
     $name = $_SESSION['username'];
 }
 ?>
