@@ -1,5 +1,5 @@
 Sec Hit distribution webside
 ============================
 
-##JSON DB is recommended
+JSON DB is recommended
 
