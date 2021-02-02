@@ -1,1 +1,5 @@
-Please don't hate me for my code, it's my first website ^^'.
+Sec Hit distribution webside
+============================
+
+#JSON DB is recommended
+
