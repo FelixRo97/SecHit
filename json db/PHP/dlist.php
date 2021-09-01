@@ -114,14 +114,15 @@ if(isset($_SESSION['observing']) and $_SESSION['observing'] !==false){
 }
 
 echo"<br>";
-
+if($playercount>4 and $playercount<11){
     //search for possible spaces in playername (error avoidence)
-for ($i=0; $i<$playercount;$i++){
-$j=($i+1);
-$playerlist[$i]["Player_$j"] = trim($playerlist[$i]["Player_$j"]);
+    for ($i=0; $i<$playercount;$i++){
+        $j=($i+1);
+        $playerlist[$i]["Player_$j"] = trim($playerlist[$i]["Player_$j"]);
     }
-$newJsonString = json_encode($playerlist);
-file_put_contents("DB/".$playercount."_Players.json", $newJsonString);    
+    $newJsonString = json_encode($playerlist);
+    file_put_contents("DB/".$playercount."_Players.json", $newJsonString);    
+}
 ?>
 
 <script>
